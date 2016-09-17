@@ -68,6 +68,7 @@ public class TimetableView extends LinearLayout {
 
     public void setCourseList(List<Course> courseList) {
         this.courseList = courseList;
+        removeAllViews();
         initView();
         invalidate();
     }
